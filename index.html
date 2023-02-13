@@ -8,40 +8,41 @@
     <title>Flexbox Responsive</title>
 </head>
 <body>
-
-    <!-- Cabecera -->
-    <header>
-        <p>Header</p>
-        <p>Lorem ipsum dolo</p>
-    </header>
-
-    <section id="hero">
-        <p>Hero</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sem mi, porta condimentum mauris eu, auctor ornare dui.</p>      
-    </section>
-
-    <section id="big-container"">
-
-
-        <section id="container">
-            <section id="content">
-                <p>Content</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sem mi, porta condimentum mauris eu, auctor ornare dui. Nunc semper consectetur libero, eget pharetra elit tempor sed. Integer vel molestie ligula, et varius lacus. In commodo placerat ligula, ut scelerisque ex auctor nec. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-                <p>In ut posuere ligula. Proin volutpat dapibus nibh, nec lacinia ligula vulputate et. Sed lacinia, arcu a eleifend blandit, lacus libero cursus nunc, nec interdum purus urna nec massa. Donec volutpat sollicitudin risus, eget iaculis mauris tincidunt vel. Nullam ac dapibus ex. Phasellus dapibus nunc eu nunc volutpat sollicitudin. Phasellus convallis mollis mi faucibus faucibus.</p>
-            </section>
-            <section id="sidebar"> 
-                <p>Sidebar</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sem mi, porta condimentum mauris eu, auctor ornare dui. Nunc semper consectetur libero, eget pharetra elit tempor sed. Integer vel molestie ligula, et varius lacus.</p>
-            </section>
+    <!-- Englobo el header y hero en un section para el flex column -->
+    <section id="heading"">
+        <section id="header">
+            <p><strong>Header</strong></p>
+            <p>Lorem ipsum dolo</p>
         </section>
 
+        <section id="hero">
+            <p><strong>Hero</strong></p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sem mi, porta condimentum mauris eu, auctor ornare dui.</p>
+        </section>
+    </section>
+
+    <!-- Englobo el content y sidebar para el flex row [Table - Desktop] -->
+    <section id="contenedor"">
+        <section id="content">
+            <p><strong>Content</strong></p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sem mi, porta condimentum mauris eu, auctor ornare dui. Nunc semper consectetur libero, eget pharetra elit tempor sed. Integer vel molestie ligula, et varius lacus. In commodo placerat ligula, ut scelerisque ex auctor nec. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+            <p>In ut posuere ligula. Proin volutpat dapibus nibh, nec lacinia ligula vulputate et. Sed lacinia, arcu a eleifend blandit, lacus libero cursus nunc, nec interdum purus urna nec massa. Donec volutpat sollicitudin risus, eget iaculis mauris tincidunt vel. Nullam ac dapibus ex. Phasellus dapibus nunc eu nunc volutpat sollicitudin. Phasellus convallis mollis mi faucibus faucibus.</p>
+        </section>
+
+        <section id="sidebar">
+            <p><strong>Sidebar</strong></p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sem mi, porta condimentum mauris eu, auctor ornare dui. Nunc semper consectetur libero, eget pharetra elit tempor sed. Integer vel molestie ligula, et varius lacus.</p>
+        </section>
     </section>
 
 
-    <footer>
-        <p>Footer</p>
-        <p>In ut posuere ligula. Proin volutpat dapibus nibh, nec lacinia ligula vulputate et. Sed lacinia, arcu a eleifend blandit, lacus libero cursus nunc, nec interdum purus urna nec massa. Donec volutpat sollicitudin risus, eget iaculis mauris tincidunt vel. Nullam ac dapibus ex. Phasellus dapibus nunc eu nunc volutpat sollicitudin.</p>
-    </footer>
+    <!-- Acá englobo el footer -->
+    <section id="footer">
+        <footer>
+            <p><strong>Footer</strong></p>
+            <p>In ut posuere ligula. Proin volutpat dapibus nibh, nec lacinia ligula vulputate et. Sed lacinia, arcu a eleifend blandit, lacus libero cursus nunc, nec interdum purus urna nec massa. Donec volutpat sollicitudin risus, eget iaculis mauris tincidunt vel. Nullam ac dapibus ex. Phasellus dapibus nunc eu nunc volutpat sollicitudin.</p>
+        </footer>
+    </section>
     
 </body>
 </html>

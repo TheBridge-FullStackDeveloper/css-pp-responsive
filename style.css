@@ -1,238 +1,226 @@
-/* header{
-    width            : 100%;
-    height           : 60px;
-    color            : white;
-    background-color : black;
-} */
-
-body{
-    border        : 1px solid black;
-    margin        : auto;
-}
-
-/* Medidas móvil max-width:450px */
-@media screen, ( max-width:463px ) {
+/* Medidas para móvil max 450px */
+@media screen, (max-width : 450px) {
 
     body{
-        border           : 1px solid black;
-        margin           : auto;
-        background-color : black;
+        background-color  : black;
+        margin: 10px;
     }
 
-    header {
+    /* Con heading agrupo el header y el hero del HTML */
+    #heading{
+        display        : flex;
+        flex-direction : column;
+        width          : 100%;
+        margin-top     : 7px;
+    }
 
-        width             : 96%;
-        height            : 80px;
+    #header {
+        width             : 100%;
+        height            : 90px;
         color             : white;
         font-size         : 30px;
         background-color  : #33CCFF;
         font-size         : 20px;
-        margin-top        : -10px;
-        margin-left       : 5px;
-        padding-left      : 8px;
+        margin-top        : 3px;
     }
 
     p {
-        padding-top       : 5px;
-        font-size         : 15px;
+        margin-top   : 12px;
+        margin-left  : 12px;
+        margin-right : 10px;
+        font-size    : 15px;
     }
 
     #hero {
-        width             : 96%;
+        width             : 100%;
         height            : 110px;
         color             : white;
         font-size         : 30px;
         background-color  : red;
         font-size         : 30px;
-        margin-top        : -12px;
-        margin-left       : 5px;
-        padding-left      : 8px;
-
+        margin-top        : 3px;
     }
 
     #content {
-        width            : 96%;
+        width            : 100%;
         height           : 285px;
         color            : white;
         font-size        : 30px;
         background-color : green;
-        margin-top       : -12px;
-        margin-left      : 5px;
-        padding-left     : 8px;
-
+        margin-top       : 3px;
+        padding-top      : 1px;
+        padding-bottom   : 15px;
     }
 
     #sidebar {
-        width: 96%;
+        width: 100%;
         height           : 140px;
         color            : white;
         font-size        : 30px;
         background-color : #7400E1;
-        margin-top       : -12px;
-        margin-left      : 5px;
-        padding-left     : 8px;
+        margin-top       : 3px;
+        padding-top      : 1px;
 
     }
 
-    footer {
-        width             : 96%;
-        height            : 140px;
+    #footer {
+        width             : 100%;
+        height            : 180px;
         font-size         : 30px;
         color             : white;
         background-color  : #808080;
-        margin-top        : -12px;
-        margin-left       : 5px;
-        margin-bottom     : 5px;
-        padding-left      : 8px;
+        margin-top        : 3px;
+        padding-top       : 1px;
     }
 
 }
 
-/* Medidas Tablet */
-@media (min-width: 464px) {
+/* Medidas para la tablet 451px */
+@media ( min-width: 451px ) {
 
-    header {
-        width            : 96%;
-        height           : 75px;
-        font-size        : 30px;
-        background-color : #33CCFF;
-        margin-top       : -10px;
-        margin-left      : 5px;
-        padding-left     : 8px;
+    body{
+        background-color: black;
+        margin: 12px;
+    }
+
+    #heading{
+        display        : flex;
+        flex-direction : column;
+        width          : 100%;
+        margin-top     : 7px;
+    }
+
+    #header {
+        width             : 100%;
+        height            : 80px;
+        color             : white;
+        font-size         : 30px;
+        background-color  : #33CCFF;
+        font-size         : 20px;
+        margin-top        : 3px;
+
     }
 
     #hero {
-        width            : 96%;
-        height           : 100px;
-        color            : white;
-        font-size        : 30px;
-        background-color : red;
-        font-size        : 30px;
-        margin-top       : -12px;
-        margin-left      : 5px;
-        padding-left     : 8px;
+        width             : 100%;
+        height            : 110px;
+        color             : white;
+        font-size         : 30px;
+        background-color  : red;
+        font-size         : 30px;
+        margin-top        : 3px;
+
     }
 
-    #container{
-        display          : flex;
-        /* flex-direction: row; */
+    #contenedor{
+        display: flex;
+        flex-direction: row;
     }
 
     #content {
-        width            : 56%;
+        width            : 60%;
         height           : 450px;
         color            : white;
         font-size        : 30px;
         background-color : green;
         margin-top       : 3px;
-        margin-left      : 5px;
-        padding-left     : 7px;
-
     }
 
     #sidebar {
-        width            : 37%;
-        height           : 450px;
+        width            : 40%;
+        height           : 465px;
         color            : white;
         font-size        : 30px;
         background-color : #7400E1;
         margin-top       : 3px;
         margin-left      : 3px;
-        padding-left     : 12px;
 
     }
 
-
-    footer {
-        width            : 96%;
-        height           : 150px;
-        font-size        : 30px;
-        color            : white;
-        background-color : #808080;
-        margin-top       : -11px;
-        margin-left      : 5px;
-        margin-bottom    : 5px;
-        padding-left     : 8px;
+    #footer {
+        width             : 100%;
+        height            : 165px;
+        font-size         : 30px;
+        color             : white;
+        background-color  : #808080;
+        margin-top        : 3px;
     }
 
 }
 
+/* medidas para Desktop 1024px */
+@media (min-width: 1024px) {
 
-/* Medidas de escritorio min-width: 1024px  */
-@media ( min-width: 1024px ) {
-
-    #big-container {
-        width         : 85%;
-        padding-left  : 7%;
-        padding-right : 25%;
+    body{
+        background-color: black;
     }
 
-    .desktop {
-        width          : 98%;
+    #heading{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 7px;
     }
 
-    header {
-        width            : 98%;
-        height           : 90px;
-        font-size        : 30px;
-        background-color : #33CCFF;
-        margin-top       : 7px;
-        margin-left      : 5px;
-        padding-left     : 8px;
-    }
+    #header {
+        width             : 100%;
+        height            : 80px;
+        color             : white;
+        font-size         : 30px;
+        background-color  : #33CCFF;
+        font-size         : 20px;
+        margin-top        : 3px;
 
-    p {
-        font-size        : 15px;
     }
 
     #hero {
-        width            : 98%;
-        height           : 90px;
-        color            : white;
-        font-size        : 30px;
-        background-color : red;
-        font-size        : 30px;
-        margin-top       : -10px;
-        margin-left      : 5px;
-        padding-left     : 8px;
+        width             : 100%;
+        height            : 110px;
+        color             : white;
+        font-size         : 30px;
+        background-color  : red;
+        font-size         : 30px;
+        margin-top        : 3px;
 
     }
 
+    #contenedor{
+        display: flex;
+        flex-direction: row;
+        width: 75%;
+        margin: auto;
+    }
+
+
     #content {
-        width            : 98%;
-        height           : 390px;
+        width            : 70%;
+        height           : 380px;
         color            : white;
         font-size        : 30px;
         background-color : green;
-        margin-top       : 5px;
-        margin-left      : 5px;
-        padding-left     : 8px;
+        margin-top       : 3px;
 
     }
 
     #sidebar {
-        width            : 50%;
-        height           : 390px;
+        width: 40%;
+        height           : 395px;
         color            : white;
         font-size        : 30px;
         background-color : #7400E1;
-        margin-top       : 5px;
-        margin-left      : 5px;
-        padding-left     : 8px;
+        margin-top       : 3px;
+        margin-left      : 3px;
 
     }
 
-    footer {
-        width             : 98%;
-        height            : 90px;
+    #footer {
+        width             : 100%;
+        height            : 105px;
         font-size         : 30px;
         color             : white;
         background-color  : #808080;
-        margin-top        : -10px;
-        margin-left       : 5px;
-        margin-bottom     : 5px;
-        padding-left      : 8px;
+        margin-top        : 3px;
+        margin-bottom: 5px;
     }
-
 
 }
