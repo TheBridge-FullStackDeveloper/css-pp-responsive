@@ -1,0 +1,168 @@
+
+/* A las etiquetas de HTML y body les he añadido un alto del 100% para que coja todo el tamaño de la pantalla 
+y no se queden todos los divs pegados en la parte superior */
+* {
+    margin: 0;  
+    padding: 0;
+  
+  }
+  
+  /* A la etiqueta div he tenido que añadirle el display flex porque el navegador por defecto le añade display:block 
+  y no permite que por ejemplo podamos distribuir en filas el div que engloba content y sidebar */
+  div {
+      text-align: left;
+      color: white;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: xx-large;
+      margin: 5px;
+      
+  }
+  h2 {
+      color: black;
+  }
+  
+  .flex-content {
+      background-color: black;
+      height: 100%;
+      
+      display: flex;
+      flex-direction: column;
+      
+      
+  }
+  
+  .header {
+      background-color: aquamarine;
+      padding: 10px;
+      
+  }
+  
+  .hero {
+      background-color: red;
+      padding: 10px;
+  }
+  .flex-content2 {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      
+      
+  }
+  
+  .content {
+      background-color: green;
+      padding: 10px;
+      
+      
+  }
+  
+  .sidebar {
+      background-color: purple;
+      padding: 10px;
+      
+  }
+  
+  .footer{
+      background-color: grey;
+      padding: 10px;
+      flex-direction: column;
+  }
+  
+  @media screen and (max-width: 450px) {
+      
+      .header {
+          height: 5%;
+      }
+      
+      .hero {
+          height: 20%;
+      }
+      
+      .flex-content2 {
+          flex-direction: column;
+          height: 70%;
+          margin: 0;
+      }
+  
+          .content {
+              height: 60%;
+          }
+  
+          .sidebar {
+              height: 40%;
+          }
+      
+      
+      .footer{
+          height: 5%;
+      }
+  
+  }
+  
+  @media screen and (min-width: 451px) {
+      
+      .header {
+          height: 5%;
+      }
+      
+      .hero {
+          height: 10%;
+      }
+  
+      .flex-content2{
+          flex-direction: row;
+          height: 80%;
+          margin: 0;
+      }
+  
+          .content {
+              width: 60%;
+          }
+          
+          .sidebar {
+              width: 40%;
+          }
+      
+      .footer{
+          height: 5%;
+      }
+  
+  }
+  
+  @media screen and (min-width: 1000px) {
+      
+      
+      .header {
+          height: 5%;
+      }
+      
+      .hero {
+          height: 10%;
+          margin-left: 20%;
+          margin-right: 20%;
+      }
+  
+      .flex-content2{
+          flex-direction: row;
+          height: 80%;
+          margin-left: 20%;
+          margin-right: 20%;
+  
+      }
+  
+          .content {
+              width: 60%;
+              margin-left: 0;
+          }
+          
+          .sidebar {
+              width: 40%;
+              margin-right: 0;
+          }
+      
+      .footer{
+          height: 5%;
+      }
+  
+  
+  }
