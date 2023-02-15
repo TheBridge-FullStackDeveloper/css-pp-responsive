@@ -1,0 +1,120 @@
+*{
+
+    max-width: 100%;
+
+}
+
+.container div{
+   color:aliceblue;
+    
+   /* border-right: white;*/
+    border-left: white;
+
+    /*margin:auto;
+    font-size-adjust: 0.5;
+
+    max-width: 100%;*/
+}
+.one{
+    background-color:aqua;
+    padding: 30px 30px 20px;
+    font-family: arial;
+    font-size: 15px;
+    color:aqua;
+    text-align: justify;
+}
+
+
+.two{
+    background-color:rgb(255, 60, 0);
+    padding: 30px 30px 20px;
+    font-family: arial;
+    font-size: 15px;
+    color:aqua;
+
+    text-align: justify;
+}
+.three{
+    background-color:green;
+    padding: 30px 30px 20px;
+    font-family: arial;
+    font-size: 15px;
+    color:aqua;
+    text-align: justify;
+
+   
+
+}
+.four{
+    background-color:rgb(79, 0, 128);
+    padding: 30px 30px 20px;
+    font-family: arial;
+    font-size: 15px;
+    color:aqua;
+    text-align: justify;
+}
+.five{
+    background-color:grey;
+    padding: 30px 30px 20px;
+    font-family: arial;
+    font-size: 15px;
+    color:aqua;
+    text-align: justify;
+
+}
+
+@media screen and (max-width: 400px) {
+
+    .one, .five {
+display: block;
+width: 100%;
+padding-bottom: 30px;
+    }
+    .two, .four, .three {
+        display: block;
+        width: 100%;
+        padding-bottom: 30px;
+            }      
+    }
+
+@media screen and (min-width: 401px) and (max-width: 1000px) {
+
+    .one, .two, .five {
+display: block;
+width: 100%;
+/*padding-bottom: 30px;*/
+    }
+    .row-tablet {
+               
+display: flex;
+width: 100%;
+margin:auto;
+/*  flex-flow: column;*/
+
+       }
+              
+}
+@media screen and (min-width: 1001px) and (max-width: 3000px) {
+
+    .one, .five {
+display: block;
+width: 100%;
+
+    }
+    .two {
+display: flex;
+justify-content: center;
+width: 76%;
+margin: auto;
+    }
+    .row-tablet{
+               
+display: flex;
+justify-content:center;
+width: 80%;
+padding-left: 100px;
+padding-right: 100px;
+margin: auto;
+   }
+              
+}
